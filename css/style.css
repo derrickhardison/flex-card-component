@@ -10,7 +10,20 @@ html, body {
     width: 90%;
     margin: auto;
     max-width: 800px;
+    background: #111d4a;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
 
+}
+
+.card-content{
+    padding: 16px;
+}
+
+.card-img{
+    object-fit: cover;
+    height: 150px;
 }
 
 .card, .card-read-time, .card-btn {
@@ -20,14 +33,43 @@ html, body {
 .card-title {
     color: #05cbe9;
     font-size: 28px;
+    margin: 0;
     
 }
 
 .card-body {
     font-size: 16px;
     font-family: 'Source Sans Pro', sans-serif;
+    line-height: 1.6;
+}
+.card-footer{
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+margin-top: 48px;
 }
 
 .card-btn {
     font-size: 20px;
+    background: #05cbe9;
+    color: #111d4a;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5.5px 16px;
+    letter-spacing: 1px;
+    
 }
+
+.card-read-time{
+    margin: 0;
+    font-size: 16px;
+    opacity: .6;
+    line-height: 1;
+}
+
+.card-read-time span {
+    font-weight: bold;
+    display: block;
+    font-size: 20px;
+}
+
